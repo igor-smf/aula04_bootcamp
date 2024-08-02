@@ -63,7 +63,7 @@ print(f"O valor total da sua compra é {preço_total}.")
 
 idades = [22, 15, 30, 17, 18]
 idade_validas = [idade for idade in idades if idade >= 18]
-print(idade_validas)
+print("\n", idade_validas)
 
 # 8. Ordenação Personalizada
 # Objetivo: Dada uma lista de dicionários representando pessoas, 
@@ -75,7 +75,7 @@ pessoas = [
     {"nome": "Carol", "idade": 20}
 ]
 
-print(sorted(pessoas, key=lambda pessoa: pessoa["nome"]))
+print("\n", sorted(pessoas, key=lambda pessoa: pessoa["nome"]))
 
 # 9. Agregação de Dados
 # Objetivo: Dado um conjunto de números, calcular a média.
@@ -98,7 +98,7 @@ for p in produtos:
     if p["id"] == 2:
         p["preço"] = 90
 
-print(produtos)
+print("\n", produtos)
 
 # 12. Fusão de Dicionários
 # Objetivo: Dados dois dicionários, fundi-los em um único dicionário.
@@ -114,3 +114,31 @@ print(produtos)
 # 15. Contagem de Frequência de Itens
 # Objetivo: Dada uma string, contar a frequência de cada caractere 
 # usando um dicionário.
+
+# Funções
+# Escreva uma função que receba uma lista de números 
+# e retorne a soma de todos os números.
+
+
+# Crie uma função que receba um número como argumento 
+# e retorne True se o número for primo e False caso contrário.
+
+def is_primo(numero):
+    if numero > 1:
+        for i in range(2, numero):
+            if numero % i == 0:
+                return False
+        return True
+
+print("\n", is_primo(17))
+
+# Desenvolva uma função que receba uma string como argumento 
+# e retorne essa string revertida.
+
+# Implemente uma função que receba dois argumentos: uma lista de 
+# números e um número. A função deve retornar todas as combinações 
+# de pares na lista que somem ao número dado.
+
+
+# Escreva uma função que receba um dicionário e retorne uma lista 
+# de chaves ordenadas
