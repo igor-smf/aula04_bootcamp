@@ -53,3 +53,64 @@ for valor in lista_compras.values():
     preço_total += valor
 
 print(f"O valor total da sua compra é {preço_total}.")
+
+# 6. Eliminação de Duplicatas
+# Objetivo: Dada uma lista de emails, remover todos os duplicados.
+
+# 7. Filtragem de Dados
+# Objetivo: Dada uma lista de idades, filtrar apenas aquelas que 
+# são maiores ou iguais a 18.
+
+idades = [22, 15, 30, 17, 18]
+idade_validas = [idade for idade in idades if idade >= 18]
+print(idade_validas)
+
+# 8. Ordenação Personalizada
+# Objetivo: Dada uma lista de dicionários representando pessoas, 
+# ordená-las pelo nome.
+
+pessoas = [
+    {"nome": "Bob", "idade": 25},
+    {"nome": "Alice", "idade": 30},    
+    {"nome": "Carol", "idade": 20}
+]
+
+print(sorted(pessoas, key=lambda pessoa: pessoa["nome"]))
+
+# 9. Agregação de Dados
+# Objetivo: Dado um conjunto de números, calcular a média.
+
+# 10. Divisão de Dados em Grupos
+# Objetivo: Dada uma lista de valores, dividir em duas listas: 
+# uma para valores pares e outra para ímpares.
+
+# 11. Atualização de Dados
+# Objetivo: Dada uma lista de dicionários representando produtos, 
+# atualizar o preço de um produto específico.
+
+produtos = [
+    {"id": 1, "nome": "Teclado", "preço": 100},
+    {"id": 2, "nome": "Mouse", "preço": 80},
+    {"id": 3, "nome": "Monitor", "preço": 300}
+]
+
+for p in produtos:
+    if p["id"] == 2:
+        p["preço"] = 90
+
+print(produtos)
+
+# 12. Fusão de Dicionários
+# Objetivo: Dados dois dicionários, fundi-los em um único dicionário.
+
+# 13. Filtragem de Dados em Dicionário
+# Objetivo: Dado um dicionário de estoque de produtos, 
+# filtrar aqueles com quantidade maior que 0.
+
+# 14. Extração de Chaves e Valores
+# Objetivo: Dado um dicionário, criar listas separadas para suas 
+# chaves e valores.
+
+# 15. Contagem de Frequência de Itens
+# Objetivo: Dada uma string, contar a frequência de cada caractere 
+# usando um dicionário.
